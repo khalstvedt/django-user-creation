@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-22 15:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:10
+msgid "Username"
+msgstr ""
+
+#: forms.py:11
+msgid ""
+"Required. 30 characters or fewer. Alphanumeric characters only (letters, "
+"digits and underscores)."
+msgstr ""
+
+#: forms.py:12
+msgid "This value must contain only letters, numbers and underscores."
+msgstr ""
+
+#: forms.py:13
+msgid "Email address"
+msgstr ""
+
+#: forms.py:14
+msgid "Password"
+msgstr ""
+
+#: forms.py:15
+msgid ""
+"Leave blank to create a user with a random password and an activation "
+"profile.             Only use this if you want to set up an account with a "
+"known password"
+msgstr ""
+"Laat leeg als je een gebruiker wilt maken met een random wachwoord en een "
+"activatie email. Gebruik dit alleen als je een account maakt met een bekend "
+"wachtwoord."
+
+#: forms.py:17
+msgid "Send the user a notification email"
+msgstr "Stuur de gebruiker een notificatie email"
+
+#: forms.py:18
+msgid ""
+"If you generate a random password, this will be an email with an activation "
+"link. Otherwise it will contain the users login credentials"
+msgstr ""
+
+#: forms.py:28
+msgid "A user with that username already exists."
+msgstr ""
+
+#: forms.py:37
+msgid "A user with that email address already exists."
+msgstr ""
+
+#: forms.py:58
+msgid "New password"
+msgstr ""
+
+#: forms.py:59
+msgid "New password confirmation"
+msgstr ""
+
+#: forms.py:71
+msgid "The two password fields didn't match."
+msgstr ""
+
+#: models.py:220
+msgid "user"
+msgstr ""
+
+#: models.py:221
+msgid "activation key"
+msgstr "activatie code"
+
+#: models.py:226
+msgid "activation profile"
+msgstr "activatie profiel"
+
+#: models.py:227
+msgid "activation profiles"
+msgstr "activatie profielen"
+
+
+#: views.py:26
+msgid ""
+"Your password has been set,                     please remember to remember "
+"it. You are now logged in."
+msgstr ""
+"Je wachtwoord is ingesteld. Vergeet 'm alsjeblieft niet te onthouden. Je "
+"bent nu ingelogd."
+
+#: views.py:30
+msgid "Tampered activation key"
+msgstr "Fout met de activatie code"
+
+#: templates/admin/auth/user/add_form.html:5
+msgid ""
+"First, enter a username and an email address. Then, you'll be able to edit "
+"more user options."
+msgstr ""
+"Vul eerst een gebruikersnaam en een email adres in. Daarna kun je de overige "
+"gebruikers-opties wijzigen."
+
+#: templates/user_creation/activate.html:4
+msgid "Account activation"
+msgstr "Account activatie"
+
+#: templates/user_creation/activate.html:8
+msgid "Account activated."
+msgstr "Account geactiveerd"
+
+#: templates/user_creation/activate.html:9
+msgid "Thanks for activating your account. Please set your password below."
+msgstr ""
+"Bedankt voor het activeren van je account. Stel alsjeblieft hieronder je "
+"wachtwoord in."
+
+#: templates/user_creation/activate.html:12
+msgid "Set password"
+msgstr "Stel wachtwoord in"
+
+#: templates/user_creation/activate.html:15
+msgid "Activation error"
+msgstr "Activatie fout"
+
+#: templates/user_creation/activate.html:16
+#, python-format
+msgid ""
+"\n"
+"    Sorry, it didn't work. Either you already activated, your activation \n"
+"    link was incorrect, or\n"
+"    the activation key for your account has expired; activation keys are\n"
+"    only valid for %(expiration_days)s days after registration.\n"
+"    <br/>Please contact the administrator."
+msgstr ""
+"\n"
+"Sorry, je kan niet geactiveerd worden. Of je bent al geactiveerd, of de "
+"activatielink was niet correct, of de activatie code is verlopen; activatie "
+"codes zijn %(expiration_days)s dagen geldig. <br/>Neem alsjeblieft contact "
+"op met de administrator."

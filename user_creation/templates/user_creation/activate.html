@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Account activation" %}{% endblock %}
+
+{% block content %}
+  {% if account %}
+  <h1>{% trans "Account activated." %}</h1>
+    <p>{% trans "Thanks for activating your account. Please set your password below." %}</p>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ set_password_form.as_p }}
+        <p><input type="submit" name="_save" value="{% trans "Set password" %}" /></p>
+    </form>
+  {% else %}
+  <h1>{% trans "Activation error" %}</h1>
+    <p>{% blocktrans %}
+    Sorry, it didn't work. Either you already activated, your activation 
+    link was incorrect, or
+    the activation key for your account has expired; activation keys are
+    only valid for {{ expiration_days }} days after registration.
+    <br/>Please contact the administrator.{% endblocktrans %}</p>
+  {% endif %}
+{% endblock %}

@@ -124,6 +124,8 @@ class ActivationManager(models.Manager):
             user.save()
             if send_email:
                 self.mail_credentials(user, password)
+            else:
+                activation_profile = False
         if profile_callback is not None:
             profile_callback(user=new_user)
         

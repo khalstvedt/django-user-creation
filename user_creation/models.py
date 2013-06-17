@@ -110,6 +110,7 @@ class ActivationManager(models.Manager):
             The ``User`` to relate the profile to.
         
         """
+        activation_profile = False
         if password == '':
             user.set_unusable_password()
             user.is_active = True
@@ -123,9 +124,7 @@ class ActivationManager(models.Manager):
             user.set_password(password)
             user.save()
             if send_email:
-                self.mail_credentials(user, password)
-            else:
-                activation_profile = False
+                self.mail_credentials(user, password)            
         if profile_callback is not None:
             profile_callback(user=new_user)
         

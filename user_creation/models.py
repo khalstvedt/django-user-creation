@@ -153,6 +153,7 @@ class ActivationManager(models.Manager):
         
         message = render_to_string('accounts/activation_email.txt',
                                    { 'activation_profile': activation_profile,
+                                     'username': user.username,
                                      'expiration_days': ACCOUNT_ACTIVATION_DAYS,
                                      'site': current_site })
         

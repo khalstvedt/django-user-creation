@@ -2,6 +2,8 @@ Hi,
 
 An account has been created for you on Example.com
 
+Your username is: {{ username }}
+
 You can activate your account by clicking on the following link (or copy it into your webbrowser):
 
 http://{{ site.domain }}{% url user_creation:activate activation_key=activation_profile.activation_key%}

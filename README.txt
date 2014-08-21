@@ -2,6 +2,8 @@
 django-user-creation
 ====================
 
+by Tino de Bruijn (https://bitbucket.org/tino/django-user-creation)
+
 django-user-creation is an app that overrides the admin so that when you create users, you can easily email them a link to activate their account, or their credentials, if you choose to provide those for them.
 
 Usage
